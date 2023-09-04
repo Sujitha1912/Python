@@ -1,0 +1,24 @@
+def distance_in_miles():
+	KM=int(input("enter the value in km:"))
+	distance_in_miles=KM*0.621371
+	return distance_in_miles
+
+def time_in_minutes():
+	hours=int(input("enter the hours:"))
+	mts=int(input("enter the minutes:"))
+	sec=int(input("enter the seconds:"))
+	total_minutes=(hours*60)+mts+(sec/60)
+	return total_minutes
+	
+def time_in_hours():
+	hours=int(input("enter the hours:"))
+	mts=int(input("enter the minutes:"))
+	sec=int(input("enter the seconds:"))
+	total_hours=hours+(mts/60) +(sec/3600)
+	return total_hours
+	
+Average_speed=distance_in_miles()/time_in_hours()
+print("Average speed",Average_speed,"miles per hour")
+
+Average_pace=time_in_minutes()/distance_in_miles()
+print("Average Pace",Average_pace,"time per mile")
