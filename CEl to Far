@@ -1,0 +1,8 @@
+
+cel=int(input("enter a value in celcius:"))
+if(cel>0):
+	faren=(1.8*cel)+32
+	print("The temperature in farenheit is :",faren)
+else:
+	Print("enter a valid positive number")
+	
